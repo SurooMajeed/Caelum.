@@ -14,11 +14,12 @@
         .main {
             width: 100%;
             min-height: 100vh;
-            background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 100%), url('IMG_8945.JPG');
+            background: linear-gradient(to top, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.6) 100%), url('IMG_8945.JPG');
             background-position: center;
             background-size: cover;
             display: flex;
             flex-direction: column;
+            padding: 20px 0;
         }
 
         .navbar {
@@ -66,7 +67,7 @@
         ul li a {
             text-decoration: none;
             color: white;
-            font-family: Arial;
+            font-family: Arial, sans-serif;
             font-weight: bold;
             transition: 0.4s ease-in-out;
         }
@@ -84,7 +85,8 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 0 20px;
+            padding: 20px;
+            gap: 30px;
         }
 
         .content-left {
@@ -102,6 +104,7 @@
         .content-left p {
             font-size: 16px;
             line-height: 1.6;
+            text-align: justify;
         }
 
         .content-right {
@@ -142,21 +145,57 @@
             background: transparent;
             color: #e3e7e9;
         }
+
+        /* استایل‌های مخصوص صفحه نمایش موبایل */
+        @media (max-width: 768px) {
+            .content-container {
+                flex-direction: column;
+                justify-content: center;
+                padding: 15px;
+                gap: 25px;
+            }
+
+            .content-left {
+                width: 100%;
+                text-align: center;
+            }
+
+            .content-left h1 {
+                font-size: 30px;
+                margin-bottom: 15px;
+            }
+
+            .content-left p {
+                font-size: 14px;
+                line-height: 1.5;
+            }
+
+            .content-right {
+                width: 100%;
+            }
+
+            .content-image {
+                max-width: 100%;
+            }
+
+            ul {
+                gap: 20px;
+            }
+        }
     </style>
 </head>
 <body>
 
   <div class="main">
 
-
     <div class="content-container">
         <div class="content-left">
             <h1>Calem Overview</h1>
-        <p> The word Caelum (sometimes spelled as Calemum) has the following meanings and concepts depending on the context:
+            <p> The word Caelum (sometimes spelled as Calemum) has the following meanings and concepts depending on the context:
  In Astronomy: Caelum (known in Persian as the "Chisel") is the name of one of the 88 modern constellations in the southern sky. It has a small area and was named by the French astronomer Nicolas-Louis de Lacaille in the 18th century.
  In Latin: The Latin word caelum has roots that include meanings such as "sky," "the space overhead," or "heaven." For this reason, many space-related projects, companies, or artworks choose this name.
  In Projects and Brands: Given that you have previously used this name for galactic and space images, "CAELUM" serves as a unique, modern, and cosmic name that evokes the essence of science, space, and the galaxy.</p>
-    </div>
+        </div>
         <div class="content-right">
             <img src="IMG_8954.JPG" alt="Cosmology" class="content-image">
             <a href="index0.html" class="task-btn">Let's see the tasks</a>
