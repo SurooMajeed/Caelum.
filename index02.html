@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_02</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            /* پس‌زمینه روشن با تم آبی و سفید */
+            background: linear-gradient(135deg, rgba(235, 245, 255, 0.85), rgba(200, 225, 255, 0.85)), url('IMG_8942.JPG') no-repeat center center fixed;
+            background-size: cover;
+            color: #1e293b;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Navbar */
+        .navbar {
+            width: 100%;
+            max-width: 1200px;
+            height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .logo {
+            color: #0284c7;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .menu ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: #334155;
+            font-weight: 600;
+            font-size: 15px;
+            transition: 0.3s ease;
+        }
+
+        .menu ul li a:hover {
+            color: #0284c7;
+        }
+
+        /* Notebook Container */
+        .notebook-container {
+            max-width: 1000px;
+            width: 90%;
+            margin: 40px auto;
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            border: 2px solid #e2e8f0;
+            box-shadow: 0 20px 40px rgba(0, 100, 200, 0.12);
+            padding: 40px;
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        /* Left Side: Notebook Text Page */
+        .notebook-text {
+            flex: 1.2;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            border-right: 5px solid #0284c7;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .notebook-text h1 {
+            color: #0369a1;
+            font-size: 28px;
+            margin-bottom: 15px;
+            border-bottom: 2px dashed #cbd5e1;
+            padding-bottom: 10px;
+        }
+
+        .notebook-text p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #475569;
+            margin-bottom: 25px;
+        }
+
+        /* Right Side: Image */
+        .notebook-image-sec {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .side-image {
+            width: 100%;
+            max-width: 320px;
+            height: auto;
+            border-radius: 15px;
+            border: 4px solid #ffffff;
+            box-shadow: 0 10px 25px rgba(2, 132, 199, 0.2);
+        }
+
+        /* Bottom Navigation Buttons */
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 10px 18px;
+            background-color: #0284c7;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s ease;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #0369a1;
+            box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .notebook-container {
+                flex-direction: column;
+                padding: 20px;
+            }
+            .nav-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar">
+        <h2 class="logo"></h2>
+        <div class="menu">
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Notebook Section -->
+    <div class="notebook-container">
+        
+        <!-- Left Side: Notebook Sheet Text -->
+        <div class="notebook-text">
+            <h1>من ذره ای میان بی نهایت یا هم قطری در اقیانوس</h1>
+            <p>
+                Task 2:
+
+در یک مقاله کوتاه توضیح بدهید که یادگیری دربارهٔ مقیاس‌ها و اندازه‌های بنهایت ریز و بینهایت بزرگ جهان چگونه طرز فکر یا احساس شما نسبت به خودتان و جهان را تغییر داده است.
+            </p>
+            <p>
+                من ذره ای میان بی نهایت یا هم قطری در اقیانوس 
+
+هرچه بیشتر درباره مقیاس‌های جهان می‌آموزم بیشتر متوجه می‌شوم که انسان در برابر عظمت هستی موجودی بسیار کوچک است اما همین کوچکی به معنای بی‌ارزش بودن ما نیست برعکس برای من شگفت‌انگیز است که همین انسان کوچک می‌تواند درباره کهکشان‌ها ستاره‌ها اتم‌ها و حتی کوچک‌ترین ذرات جهان بیندیشد علم به من آموخته است که جهان در دو سوی شگفت‌انگیز گسترده شده است از ذرات بسیار کوچک و مقیاس‌های نزدیک به اندازه اتم و حتی کوچک‌تر...... تا ستارگان کهکشان‌ها و ساختارهای عظیم کیهانی وقتی به این فاصله عظیم میان بی‌نهایت کوچک و بی‌نهایت بزرگ فکر می‌کنم احساس می‌کنم انسان مانند قطره‌ای در اقیانوس هستی است اما قطره‌ای که می‌تواند تمام اقیانوس را در ذهن خود تصور کند....
+گاهی با خود می‌اندیشم اگر جهان با این همه عظمت است پس من چه اندازه کوچک هستم؟ اما پاسخ که در ذهنم شکل می‌گیرد شاید ارزش انسان در بزرگی جسم او نیست بلکه در بزرگی اندیشه روح و توانایی او برای شناخت حقیقت است قرآن مجید می‌فرماید: (وفي انفسكم  افلا تبصرون) و در وجود خودتان نیز نشانه‌هایی است آیا نمی‌بینید؟ 
+انسان از نظر اندازه کوچک است اما از نظر پرسش و اندیشه می‌تواند به سوی بی‌نهایت سفر کند هرچه جهان برایم بزرگ‌تر می‌شود من کوچک‌تر نمی‌شوم بلکه فروتن‌تر عمیق‌تر و شگفت‌زده‌تر می‌شوم و شاید این همان نقطه‌ای باشد که علم و عرفان در آن به هم می‌رسند اکنون وقتی به آسمان نگاه می‌کنم فقط چند نقطهٔ نورانی نمی‌بینم بلکه عظمت جهانی را می‌بینم که جایگاه مرا به من یادآوری می‌کند و وقتی به کوچک‌ترین ذرات فکر می‌کنم درمی‌یابم که عظمت فقط در چیزهای بزرگ نیست گاهی یک جهان شگفت‌انگیز می‌تواند در چیزی نهفته باشد که چشم انسان حتی قادر به دیدنش نیست شاید من در برابر جهان تنها یک ذره باشم اما ذره‌ای هستم که می‌تواند به بی‌نهایت بیندیشد و شاید زیباترین راز انسان همین باشد کوچک بودن در اندازه اما بزرگ بودن در اندیشه و یا هم انسان همین است قطره یی در اقیانوس....
+#سرود_مجید
+           </p>
+            
+            <!-- Working 3 Navigation Buttons -->
+            <div class="nav-buttons">
+                 <a href="index01.html" class="nav-btn">&#8592; Go Back</a>
+                <!-- دکمه خانه: به صفحه index.html می‌رود -->
+                <a href="index0.html" class="btn">Go to Home</a>
+                
+                
+                <a href="index03.html" class="btn">Go to Next </a>
+            </div>
+        </div>
+
+        <!-- Right Side: Side Image -->
+        <div class="notebook-image-sec">
+            <img src="IMG_8948.JPG" alt="Cosmology Study" class="side-image">
+        </div>
+
+    </div>
+
+    <script>
+        
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caelum - Tasks</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+            min-height: 100vh;
+            /* عکس پس‌زمینه با لایه تاریک */
+            background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('IMG_8942.JPG');
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        /* Header / Navbar */
+        .navbar {
+            width: 100%;
+            max-width: 1200px;
+            height: 75px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .logo {
+            color: #ff7200;
+            font-size: 35px;
+        }
+
+        .menu ul {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+            transition: 0.3s ease;
+        }
+
+        .menu ul li a:hover {
+            color: blueviolet;
+        }
+
+        /* Section Title Container */
+        .header-container {
+            max-width: 1200px;
+            margin: 30px auto 20px auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .page-title {
+            color: #f6fafb;
+            font-size: 36px;
+        }
+
+        /* Go Back Button */
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            background-color: transparent;
+            color: #ff7200;
+            border: 2px solid #ff7200;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            transition: 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #ff7200;
+            color: white;
+            box-shadow: 0 0 10px rgba(255, 114, 0, 0.5);
+        }
+
+        /* Grid for 16 Tasks */
+        .tasks-grid {
+            max-width: 1200px;
+            margin: 0 auto 50px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        /* Task Card Link */
+        .task-card {
+            text-decoration: none;
+            color: white;
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #495467;
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            backdrop-filter: blur(5px);
+        }
+
+        .task-card:hover {
+            transform: translateY(-8px);
+            border-color: rgb(41, 5, 74);
+            box-shadow: 0 8px 20px rgba(138, 43, 226, 0.4);
+        }
+
+        .task-card img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .task-card h3 {
+            font-size: 18px;
+            color: #eff3f0;
+            transition: 0.3s ease;
+        }
+
+        .task-card:hover h3 {
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section with Go Back Button -->
+    <div class="header-container">
+        <a href="index.html" class="back-btn">&#8592; Go Back</a>
+        <h1 class="page-title">Cosmology Tasks</h1>
+        <div style="width: 110px;"></div> <!-- Spacer for visual balance -->
+    </div>
+
+    <!-- Grid Container with 16 Tasks -->
+    <div class="tasks-grid">
+        <a href="index01.html" class="task-card">
+            <img src="IMG_8921.JPG" alt="Task 1">
+            <h3>Task 1</h3>
+        </a>
+
+        <a href="index02.html" class="task-card">
+            <img src="IMG_8922.JPG" alt="Task 2">
+            <h3>Task 2</h3>
+        </a>
+
+        <a href="index03.html" class="task-card">
+            <img src="IMG_8923.JPG" alt="Task 3">
+            <h3>Task 3</h3>
+        </a>
+
+        <a href="index04.html" class="task-card">
+            <img src="IMG_8924.JPG" alt="Task 4">
+            <h3>Task 4</h3>
+        </a>
+
+        <a href="index05.html" class="task-card">
+            <img src="IMG_8925.JPG" alt="Task 5">
+            <h3>Task 5</h3>
+        </a>
+
+        <a href="index06.html" class="task-card">
+            <img src="IMG_8926.JPG" alt="Task 6">
+            <h3>Task 6</h3>
+        </a>
+
+        <a href="index07.html" class="task-card">
+            <img src="IMG_8927.JPG" alt="Task 7">
+            <h3>Task 7</h3>
+        </a>
+
+        <a href="index08.html" class="task-card">
+            <img src="IMG_8928.JPG" alt="Task 8">
+            <h3>Task 8</h3>
+        </a>
+
+        <a href="index09.html" class="task-card">
+            <img src="IMG_8929.JPG" alt="Task 9">
+            <h3>Task 9</h3>
+        </a>
+
+        <a href="index10.html" class="task-card">
+            <img src="IMG_8930.JPG" alt="Task 10">
+            <h3>Task 10</h3>
+        </a>
+
+        <a href="index11.html" class="task-card">
+            <img src="IMG_8931.JPG" alt="Task 11">
+            <h3>Task 11</h3>
+        </a>
+
+        <a href="index12.html" class="task-card">
+            <img src="IMG_8932.JPG" alt="Task 12">
+            <h3>Task 12</h3>
+        </a>
+
+        <a href="culum13.html" class="task-card">
+            <img src="IMG_8933.JPG" alt="Task 13">
+            <h3>Task 13</h3>
+        </a>
+
+        <a href="culum14.html" class="task-card">
+            <img src="IMG_8934.JPG" alt="Task 14">
+            <h3>Task 14</h3>
+        </a>
+
+        <a href="culum15.html" class="task-card">
+            <img src="IMG_8935.JPG" alt="Task 15">
+            <h3>Task 15</h3>
+        </a>
+
+        <a href="culum16.html" class="task-card">
+            <img src="IMG_8936.JPG" alt="Task 16">
+            <h3>Task 16</h3>
+        </a>
+    </div>
+
+</body>
+</html>

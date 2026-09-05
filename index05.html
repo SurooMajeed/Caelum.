@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_05</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 15px;
+
+            /* تصویر پس‌زمینه */
+            background: linear-gradient(rgba(15, 23, 42, 0.5), rgba(15, 23, 42, 0.6)), 
+                        url('IMG_8949.JPG') no-repeat center center fixed;
+            background-size: cover;
+            color: #f8fafc;
+        }
+
+        /* ورقه شیشه‌ای اصلی */
+        .glass-card {
+            max-width: 950px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 24px;
+            
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+        }
+
+        /* عنوان صفحه */
+        .main-title {
+            text-align: center;
+            color: #38bdf8;
+            font-size: 28px;
+            margin-bottom: 25px;
+            text-shadow: 0 0 10px rgba(56, 189, 248, 0.4);
+        }
+
+        /* بخش اول: ۲ حصه‌ بالا */
+        .top-sections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        /* تصویر در وسط */
+        .middle-image-container {
+            width: 100%;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 2px solid rgba(56, 189, 248, 0.4);
+            margin-bottom: 25px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        .middle-image-container img {
+            width: 100%;
+            max-height: 380px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* بخش دوم: ۲ حصه‌ پایین */
+        .bottom-sections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        /* استایل اختصاصی ۴ حصه */
+        .section-box {
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 14px;
+            padding: 20px;
+            backdrop-filter: blur(8px);
+        }
+
+        .section-box h3 {
+            color: #7dd3fc;
+            font-size: 18px;
+            margin-bottom: 10px;
+            border-right: 3px solid #38bdf8;
+            padding-right: 10px;
+        }
+
+        .section-box p {
+            font-size: 14px;
+            color: #e2e8f0;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        /* دکمه‌های ۳ گانه پایین */
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            direction: ltr;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 12px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #38bdf8;
+            border: 1px solid #38bdf8;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            text-align: center;
+            transition: 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #38bdf8;
+            color: #0f172a;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.6);
+        }
+
+        @media (max-width: 768px) {
+            .glass-card {
+                padding: 20px;
+            }
+            .nav-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="glass-card">
+        <h1 class="main-title">تحلیل و بررسی فیلم INTERSTELLAR</h1>
+
+        <!-- ۲ حصه بالا -->
+        <div class="top-sections">
+            <div class="section-box">
+                <h3>حصه اول: مفهوم نسبیت و زمان</h3>
+                <p>
+                    در فیلم میان‌ستاره‌ای، زمان به عنوان یک بعد فیزیکی و متغیر به تصویر کشیده شده است. به دلیل میدان گرانشی شدید سیاه‌چاله جارگانتوا، هر ساعت روی سیاره میلر برابر با هفت سال روی زمین می‌گذرد.
+                </p>
+            </div>
+            <div class="section-box">
+                <h3>حصه دوم: سیاه‌چاله و کرم‌چاله</h3>
+                <p>
+                    کرم‌چاله ارائه‌شده در فیلم، بازکننده مسیری کوتاه میان دو نقطه دور از کهکشان است. تصویر سیاه‌چاله جارگانتوا بر اساس محاسبات واقعی فیزیکدان معروف، کیپ تورن، شبیه‌سازی شده است.
+                </p>
+            </div>
+        </div>
+
+        <!-- عکس در وسط -->
+        <div class="middle-image-container">
+            <img src="IMG_8949.JPG" alt="Interstellar Image">
+        </div>
+
+        <!-- ۲ حصه پایین -->
+        <div class="bottom-sections">
+            <div class="section-box">
+                <h3>حصه سوم: بعد پنجم (Tesseract)</h3>
+                <p>
+                    تسراکت در انتهای فیلم نمایانگر فضایی پنج‌بعدی است که انسان‌های آینده برای کوپر ساختند تا بتواند از طریق بعد گرانش و اتاق دخترش، اطلاعات علمی را به زمین بفرستد.
+                </p>
+            </div>
+            <div class="section-box">
+                <h3>حصه چهارم: بقای بشریت و عشق</h3>
+                <p>
+                    پيام اصلی فیلم فراتر از علم فیزیک است؛ عشق به عنوان تنها پیوندی معرفی می‌شود که فراتر از ابعاد زمان و مکان عمل کرده و انگیزه اصلی نجات نسل بشر را شکل می‌دهد.
+                </p>
+            </div>
+        </div>
+
+        <!-- ۳ دکمه ناوبری -->
+        <div class="nav-buttons">
+            <a href="index04.html" class="btn">&#8592; Go Back</a>
+            <a href="index0.html" class="btn">Go to Home</a>
+            <a href="index06.html" class="btn">Go to Next &#8594;</a>
+        </div>
+    </div>
+
+</body>
+</html>

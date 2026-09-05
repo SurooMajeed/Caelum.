@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_03</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            /* پس‌زمینه تاریک و فضایی */
+            background: linear-gradient(rgba(5, 10, 25, 0.85), rgba(5, 10, 25, 0.9)), url('IMG_8942.JPG') no-repeat center center fixed;
+            background-size: cover;
+            color: #e2e8f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 0;
+        }
+
+        /* NASA Main Container */
+        .nasa-container {
+            max-width: 1000px;
+            width: 90%;
+            margin: 0 auto;
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            box-shadow: 0 0 30px rgba(56, 189, 248, 0.15);
+            padding: 40px;
+        }
+
+        .nasa-header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 20px;
+        }
+
+        .nasa-header h1 {
+            color: #38bdf8;
+            font-size: 36px;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .nasa-header p {
+            color: #94a3b8;
+            font-size: 16px;
+        }
+
+        /* Content Grid (Text + Image) */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .nasa-info {
+            line-height: 1.8;
+            font-size: 15px;
+            color: #cbd5e1;
+        }
+
+        .nasa-info h3 {
+            color: #f43f5e;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .nasa-image-box img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 2px solid #38bdf8;
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+        }
+
+        /* Detailed Information Section */
+        .detailed-info {
+            background: rgba(30, 41, 59, 0.6);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .detailed-info h3 {
+            color: #38bdf8;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            border-bottom: 1px dashed rgba(56, 189, 248, 0.3);
+            padding-bottom: 5px;
+        }
+
+        .detailed-info h3:first-child {
+            margin-top: 0;
+        }
+
+        .detailed-info p {
+            color: #e2e8f0;
+            margin-bottom: 15px;
+        }
+
+        .detailed-info ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 15px;
+            color: #cbd5e1;
+        }
+
+        .detailed-info ul li {
+            margin-bottom: 8px;
+        }
+
+        /* Highlights Box */
+        .highlight-box {
+            background: rgba(56, 189, 248, 0.1);
+            border-left: 4px solid #38bdf8;
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+
+        /* 3 Navigation Buttons */
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .btn {
+            padding: 12px 24px;
+            background: transparent;
+            color: #38bdf8;
+            border: 2px solid #38bdf8;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: #38bdf8;
+            color: #0f172a;
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+            .nav-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Container -->
+    <div class="nasa-container">
+        
+        <!-- Header -->
+        <div class="nasa-header">
+            <h1>NASA & Space Exploration</h1>
+            <p>National Aeronautics and Space Administration</p>
+        </div>
+
+        <!-- Content Grid (Image and Text) -->
+        <div class="content-grid">
+            <div class="nasa-info">
+                <h3>What is NASA?</h3>
+                <p>
+                    The National Aeronautics and Space Administration (NASA) is an independent agency of the United States federal government responsible for the civilian space program, aeronautics research, and advanced aerospace research. It was established on July 29, 1958, when President Dwight D. Eisenhower signed the National Aeronautics and Space Act into law.
+                </p>
+            </div>
+            <div class="nasa-image-box">
+                <img src="IMG_8946.JPG" alt="NASA Space Mission">
+            </div>
+        </div>
+
+        <!-- Detailed Notes Section -->
+        <div class="detailed-info">
+            
+            <h3>Reasons for Establishment</h3>
+            <p>
+                The primary driver behind NASA's creation was the Cold War competition, specifically the "Space Race" between the United States and the Soviet Union. On October 4, 1957, the Soviet Union successfully launched Sputnik 1, the world's first artificial satellite. This event, known as the "Sputnik crisis," sounded the alarm for the U.S. and convinced its leaders that a centralized, civilian agency was essential to direct aerospace research for national security and scientific leadership.
+            </p>
+
+            <h3>Core Goals</h3>
+            <ul>
+                <li><strong>Advancing Space Exploration:</strong> Exploring the solar system and beyond using crewed and robotic spacecraft.</li>
+                <li><strong>Developing Scientific Knowledge:</strong> Expanding human understanding of Earth, the solar system, and the cosmos through advanced observatories and telescopes.</li>
+                <li><strong>Advancing Aeronautics:</strong> Improving safety, efficiency, and reducing environmental impacts in commercial and advanced air travel.</li>
+                <li><strong>Developing Cutting-Edge Technologies:</strong> Creating innovations with dual (space and terrestrial) applications that elevate global standards of living.</li>
+            </ul>
+
+            <h3>Major Historical Achievements</h3>
+            <ul>
+                <li><strong>The Apollo Program and Moon Landing (1969):</strong> Sending the first humans to the Moon during the Apollo 11 mission, commanded by Neil Armstrong.</li>
+                <li><strong>Space Telescopes:</strong> Launching powerful observational tools such as Hubble and James Webb, which have provided the deepest images and data of the early universe.</li>
+                <li><strong>Mars Rovers:</strong> Successful landings and operations of advanced probes like Perseverance and Curiosity to assess habitability on Mars.</li>
+                <li><strong>International Space Station (ISS):</strong> Playing a pivotal role in building and managing the largest orbiting research laboratory in cooperation with international agencies.</li>
+            </ul>
+
+            <h3>Current Activities</h3>
+            <p>
+                NASA's operational focus centers on expanding commercial spaceflight to low Earth Orbit, leveraging James Webb Space Telescope data, and executing deep-space exploration programs. The crewed "Artemis II" mission, which successfully completed its objectives, marked a major step toward returning humans to the vicinity of the Moon after decades. Additionally, a network of Earth-observation satellites continually monitors climate change and natural disasters.
+            </p>
+
+            <h3>Future Goals</h3>
+            <ul>
+                <li><strong>The Artemis Program:</strong> Establishing a permanent base at the Moon's south pole to extract resources like water ice for fuel and oxygen, serving as a stepping stone for future missions.</li>
+                <li><strong>Crewed Missions to Mars:</strong> Utilizing lunar infrastructure to prepare for long-duration human journeys to the Red Planet in the coming decade.</li>
+                <li><strong>Deep Cosmic Research:</strong> Developing next-generation observatories, such as the Habitable Worlds Observatory, to search for signs of life on exoplanets.</li>
+            </ul>
+
+            <div class="highlight-box">
+                <strong>NASA's Artemis II Mission Countdown and Latest Status:</strong><br>
+                This section showcases official NASA reports and expert evaluations regarding the preparation process and the latest details of the historic Artemis II mission.
+            </div>
+
+        </div>
+
+        <!-- 3 Working Buttons -->
+        <div class="nav-buttons">
+            <a href="index02.html" class="btn">&#8592; Go Back</a>
+            <a href="index0.html" class="btn">Go to Home</a>
+            <a href="index04.html" class="btn">Go to Next &#8594;</a>
+        </div>
+
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+</body>
+</html>
